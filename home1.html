@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Single Property & Apertment Symfony Templet Preview</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style1.css">
+
+  </head>
+<body>
+  
+<div class="top">
+  <p class="market"><img src="/Screenshorts/envento.png"></p>
+  <button class="b">Buy now</button>
+</div>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary custom-navbar" id="mainNavbar">
+  <div class="container">
+
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <img src="https://unifato.com/hosue/assets/img/logo/logo3.png" alt="">
+    </a>
+
+    <!-- Toggler (mobile) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <!-- Home – no dropdown (or you can add one later) -->
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" href="#">About Us</a>
+        </li>
+
+        <!-- Apartment – dropdown with submenus -->
+        <li class="nav-item dropdown">
+          <a class="nav-link active" href="#">
+            Apartment <i class="fa-solid fa-angle-down"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <!-- <li><a class="dropdown-item" href="#">Our Apartment</a></li> -->
+            <li class="dropdown-submenu">
+              <a class="dropdown-item" href="#">Our Apartment</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Apartment V1</a></li>
+                <li><a class="dropdown-item" href="#">Apartment V2</a></li>
+                <li><a class="dropdown-item" href="#">Apartment V3</a></li>
+                <li><a class="dropdown-item" href="#">Apartment V4</a></li>
+                <li><a class="dropdown-item" href="#">Apartment V5</a></li>
+                <li><a class="dropdown-item" href="#">Apartment V6</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a class="dropdown-item" href="#">Single Apartment </i></a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Detail Left</a></li>
+                <li><a class="dropdown-item" href="#">Detail Right</a></li>
+                <li><a class="dropdown-item" href="#">Detail Single</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Blog – dropdown with submenu -->
+        <li class="nav-item dropdown">
+          <a class="nav-link active" href="#">
+            Blog <i class="fa-solid fa-angle-down"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Our Blog</a></li>
+            <li class="dropdown-submenu">
+              <a class="dropdown-item" href="#">Blog Layouts </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Single Blog</a></li>
+                <li><a class="dropdown-item" href="#">Blog Left</a></li>
+                <li><a class="dropdown-item" href="#">Blog Right</a></li>
+                <li><a class="dropdown-item" href="#">Blog Single</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Page – simple dropdown (no submenus shown here) -->
+        <li class="nav-item dropdown">
+          <a class="nav-link active" href="#">
+            Page <i class="fa-solid fa-angle-down"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">About</a></li>
+            <li><a class="dropdown-item" href="#">Contact</a></li>
+            <li><a class="dropdown-item" href="#">FAQ</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- Desktop right icons -->
+      <div class="d-none d-lg-flex align-items-center">
+        <i class="fa-solid fa-magnifying-glass me-3"></i> 
+        <div class="soci">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Mobile contact info (unchanged) -->
+      <div class="d-lg-none mt-3 px-3">
+        <a href="#" class="btn btn-primary w-100">Get Started</a>
+        <h4>Contact Info</h4>
+        <p>+3(924)4596512</p>
+        <p>info@example.com</p>
+        <h4>Our Location</h4>
+        <p>55 East Birchwood Ave.Brooklyn, <br> New York 11201, United State</p>
+      </div>
+      <div class="mobile-contact mt-3 px-3">
+        <!-- <ul>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Contact Us <i class="fa-solid fa-angle-down"></i></a>
+          </li>
+        </ul> -->
+      </div>
+      <div class="mobile-extra d-lg-none mt-3">
+        <hr>
+        <p><i class="fa-solid fa-location-dot me-2"></i>21, Business Park, Surat</p>
+        <p><i class="fa-solid fa-phone me-2"></i>+91 98765 43210</p>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Split Screen Home Screen -->
+<div class="panes">
+  <div class="left-pane">
+  <img class="bg-img1" src="https://unifato.com/hosue/assets/img/elements/elements3.png" alt="">
+    <div class="content">
+      <button class="location-btn">
+        <i class="fa-solid fa-location-dot"></i>
+        538 Joanie Fort Apt. 933 Louisiana
+      </button>
+
+      <h1>Welcome to Your <br>Luxurious Haven</h1>
+
+      <p>
+        Our exclusive property offers a seamless blend of luxury to and <br>
+        comfort, designed to meet your every need.
+      </p>
+
+      <div class="hero-buttons">
+        <button class="visit-btn">Schedule A Visit</button>
+        <a href="#" class="video-play-button">
+        <span></span>
+        </a>
+      <p class="video-hero">Video</p>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="right-pane">
+
+  <img id="heroImage" src="https://unifato.com/hosue/assets/img/all-images/hero/hero-img1.png" alt="house">
+  
+
+  <span class="up-btn"><i class="fa-solid fa-angle-up"></i></span>
+  <span class="down-btn"><i class="fa-solid fa-angle-down"></i></span>
+
+  <div class="small-text">  
+    <img src="https://unifato.com/hosue/assets/img/all-images/others/others-img1.png" alt="empty">
+    <h3 class="fh3">Luxury Suite Villa</h3> 
+    <p class="fp1">$1.800,000</p>
+  </div>
+
+</div>
+</div>
+
+
+
+<!-- property overviw section -->
+<section class="overview-section">
+  <div class="overview-container">
+
+    <div class="bg-img">
+      <img src="https://unifato.com/hosue/assets/img/elements/elements9.png" alt="">
+    </div>
+    <div class="overview-images">
+      <img class="img-front" src="https://unifato.com/hosue/assets/img/all-images/property/property-img4.png" alt="">
+      <img class="img-back" src="https://unifato.com/hosue/assets/img/all-images/property/property-img5.png" alt="">
+    </div>
+
+    <div class="overview-content">
+      <span class="tag">PROPERTY OVERVIEW</span>
+
+      <h2>
+        Elegance Every Detail <br>
+        Welcome Suite Villa
+      </h2>
+
+      <p>
+        Experience the pinnacle of luxury living at our exclusive property,
+        where every detail has been meticulously crafted to provide an
+        unparalleled retreat.
+      </p>
+<br>
+      <p>
+        Discover the essence of luxury our exclusive property in Dallas,
+        where timeless elegance and modern best comfort converge.
+      <br><button class = "btn btn-primary">View out property</button>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- VILLA AMENITIES Section -->
+<section class="villa-amenities">
+  <span class = "tag">VILLA AMENITIES</span>
+  <h1 class="title">Our Property Amenities</h1>
+
+  <div class="amenities-container">
+
+    <div class="amenity-card up">
+      <div class="img-box">
+        <img src="https://plus.unsplash.com/premium_photo-1677782975062-56111703e90e?q=80&w=1170&auto=format&fit=crop" />
+        <span class="number">01</span>
+      </div>
+      <h3>New Construction</h3>
+      <p>Discover the epitome of luxury living at luxury, every detail.</p>
+    </div>
+
+    <div class="amenity-card down">
+      <div class="img-box">
+        <img src="https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?q=80&w=1170&auto=format&fit=crop" />
+        <span class="number">02</span>
+      </div>
+      <h3>Swimming Pool</h3>
+      <p>Explore our meticulously best designed spaces and indulge.</p>
+    </div>
+
+    <div class="amenity-card up">
+      <div class="img-box">
+        <img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1?q=80&w=1171&auto=format&fit=crop" />
+        <span class="number">03</span>
+      </div>
+      <h3>Fitness Facilities</h3>
+      <p>Uncover the essence of luxury as you explore our exclusive.</p>
+    </div>
+
+    <div class="amenity-card down">
+      <div class="img-box">
+        <img src="https://images.unsplash.com/photo-1764075895207-eb880b980324?q=80&w=1171&auto=format&fit=crop" />
+        <span class="number">04</span>
+      </div>
+      <h3>Eco Construction</h3>
+      <p>Step into sophistication and serenity at new construction.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- OUR BEST PROPERTIES Section -->
+<section class="property-section">
+
+  <span class="tag">OUR BEST PROPERTIES</span>
+  <h1 style="font-weight: 600; margin-bottom: 5rem;">Explore Our Premier Of<br>Single Property Retreat</h1>
+
+  <div class="container">
+
+    <!-- LEFT SIDE -->
+    <div class="left-side">
+
+      <!-- Slider -->
+      <div class="slider">
+        <img id="sliderImage" src="https://unifato.com/hosue/assets/img/all-images/about/about-img3.png" alt="property">
+        
+        <i class="fa-solid fa-angle-left prev-btn"></i>
+        <i class="fa-solid fa-angle-right next-btn"></i>
+      </div>
+
+      <!-- Experience Box -->
+      <div class="experience-box">
+        <h1><span id="counter">1</span>+</h1>  
+        <p>Years Of Experience</p>
+
+        <div class="avatars">
+          <img src="https://unifato.com/hosue/assets/img/all-images/about/about-img6.png" alt="Avatar">
+        </div>
+
+        <p>Our Happy Clients</p>
+      </div>
+
+      <!-- Small Image -->
+      <div class="small-image">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+          <img src="https://unifato.com/hosue/assets/img/all-images/about/about-img5.png">
+          <a href="#" class="video-play-button2">
+    <span></span>
+  </a>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="right-side">
+      <img src="https://unifato.com/hosue/assets/img/all-images/about/about-img4.png">
+
+      <div class="glass-card">
+        <h3 class="gls">Luxury Suite Villa</h3>
+        <p class="gls"><i class="fa-solid fa-bed"></i>x2 
+          <i class="fa-solid fa-bath"></i>x2  
+          <i class="fa-regular fa-square"></i>2000 sq</p>
+        <div class="arrow"><i class="fa-solid fa-circle-arrow-up"></i></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="building-gallary">
+
+  <img class="gallery-bg" src="https://unifato.com/hosue/assets/img/bg/gallery-bg1.png" alt="">
+
+  <span class="tag" style="color: white; background-color:  rgba(94, 148, 80, 0.1);">Building Gallery</span>
+  <h1 class="h1" style="color: white;">Residence Building View</h1>
+
+  <img class = "back-img" src="https://unifato.com/hosue/assets/img/elements/elements3.png" alt="">
+  <img class="img-over" src="/Screenshorts/buildng-gallary.png" alt="">
+
+</div>
+
+<!-- client-feedback -->
+
+<div class="client-feedback">
+
+  <div class="client-left">
+    <span class="tag">CLIENT FEEDBACK</span> <br> <br>
+    <h1> <b>Hear What Our Client <br> Say About Property</b></h1> <br>
+    <h6>Indulge in the epitome of luxury living at Luxury, where every 
+    <br>amenity is meticulously designed to elevate your lifestyle.</h6> <br>
+    <button class="btn">View All Testimonials</button><br>
+    <img src="https://unifato.com/hosue/assets/img/all-images/testimonial/testimonial-img3.png" alt="" >
+    <a href="#" class="video-play-button3">
+    <span></span>
+  </a>
+  </div>
+
+  <div class="client-right">
+
+    <div class="cards1">
+      <img src="https://unifato.com/hosue/assets/img/all-images/testimonial/testimonial-img5.png" alt="">
+      <span><img src="https://unifato.com/hosue/assets/img/icons/quoto-icon2.svg" alt=""></span>
+      <h5><b>Alexy Queen </b><br> Happy Client</h5> <hr>
+      <h5>Highly recommend Suite Luxury Suite Villa!  </h5>
+      <p>"After staying at Luxury, I can confidently say it was one of the most
+      <br>luxurious best experiences of luxury villa. "</p>
+      
+        <div class="starts" style="color: orange;">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+      </div>
+</div>
+
+    <div class="cards2">
+      <img src="https://unifato.com/hosue/assets/img/all-images/testimonial/testimonial-img4.png" alt="">
+      <span><img src="https://unifato.com/hosue/assets/img/icons/quoto-icon2.svg" alt=""></span>
+      <h5><b>Jofra Archer</b><br>Happy Client</h5>
+      <hr>
+      <h5>Unforgettable Experience Of Luxury & Comfort!</h5>
+      <p>"Celebrated my anniversary at Property Villa, and it was beyond
+      <br>magical. The attention to detail, the of serene. "</p>
+    <div class="starts" style="color: orange;">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+      </div>
+    </div> 
+</div>
+</div>
+
+<!-- schedule tour -->
+<div class="schedule">
+
+  <div class="left">
+    <img class="schedule-img1" src="https://unifato.com/hosue/assets/img/elements/elements8.png" alt="">
+    <img class="schedule-img2" src="https://unifato.com/hosue/assets/img/all-images/others/others-img11.png" alt="">
+    <img class="schedule-img3" src="https://unifato.com/hosue/assets/img/all-images/others/others-img12.png" alt="">
+
+  </div>
+
+  <div class="right1">
+     <span class="tag" style="color: white; background-color:  rgba(94, 148, 80, 0.1);" >SCHEDULE A TOUR</span> <br> <br>
+    <h1>Home Waiting For You <br> Here Schedule A Tour</h1> <br>
+    <p>Indulge in the epitome of luxury living at Luxury, where every amenity <br> is meticulously designed to elevate your lifestyle.</p> <br>
+    <button>Schedule a Visit</button>
+    <a href="#" class="video-play-button">  
+    <span></span>
+  </a>   
+  <p class="video-tour">Video</p>
+  </div>
+</div>
+
+<!-- blogs -->
+
+<div class="blogs">
+  <span class="tag">OUR BLOGS</span>
+  <h1>Our News & Articles</h1>
+
+  <div class="blog-container">
+    <!-- Blog Card 1 -->
+    <div class="blog-card">
+      <img class="blog-img" src="https://unifato.com/hosue/assets/img/all-images/blog/blog-img1.png" alt="">
+      <div class="blog-content">
+        <span class="blog-meta">
+          <img src="https://unifato.com/hosue/assets/img/icons/user.svg" alt=""> Joe Root |
+          <img src="https://unifato.com/hosue/assets/img/icons/calender.svg" alt=""> 16 April, 2024
+        </span>
+        <h3>How Luxury Suite Offers the <br> Perfect Blend of Comfort</h3>
+        <a href="#" class="read-more">Read More <i class="fa-solid fa-circle-arrow-up"></i></a>
+      </div>
+    </div>
+
+    <!-- Blog Card 2 -->
+    <div class="blog-card">
+      <img class="blog-img" src="https://unifato.com/hosue/assets/img/all-images/blog/blog-img2.png" alt="">
+      <div class="blog-content">
+        <span class="blog-meta">
+          <img src="https://unifato.com/hosue/assets/img/icons/user.svg" alt=""> Joe Root |
+          <img src="https://unifato.com/hosue/assets/img/icons/calender.svg" alt=""> 16 April, 2024
+        </span>
+        <h3>Guest Spotlight: Memorable <br> Moments at Luxury Suite Villa</h3>
+        <a href="#" class="read-more">Read More <i class="fa-solid fa-circle-arrow-up"></i></a>
+      </div>
+    </div>
+
+    <!-- Blog Card 3 -->
+    <div class="blog-card">
+      <img class="blog-img" src="https://unifato.com/hosue/assets/img/all-images/blog/blog-img3.png" alt="">
+      <div class="blog-content">
+        <span class="blog-meta">
+          <img src="https://unifato.com/hosue/assets/img/icons/user.svg" alt=""> Joe Root |
+          <img src="https://unifato.com/hosue/assets/img/icons/calender.svg" alt=""> 16 April, 2024
+        </span>
+        <h3>Behind the Scenes: The Art of <br> Creating Luxury Suite Villa</h3>
+        <a href="#" class="read-more">Read More <i class="fa-solid fa-circle-arrow-up"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Second footer -->
+ <footer class="footer">
+
+  <!-- Background Image -->
+  <img class="footer-img" src="https://images.unsplash.com/photo-1605146769289-440113cc3d00?q=80&w=1170&auto=format&fit=crop" alt="">
+
+  <!-- ALL CONTENT WRAPPER -->
+  <div class="footer-content">
+
+    <!-- Message Box -->
+    <div class="row g-3 Message-box">
+      <h2>Send Us A Message</h2>
+
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Your Name*"> 
+            <br>
+      </div>
+      <div class="col">
+        <input type="number" class="form-control" placeholder="Mobile Number*">
+    <br>
+      </div>
+
+      <div class="row">
+        <textarea class="form-control" placeholder="Your Message*" rows="4"></textarea>
+      </div>
+
+      <div class="foot-btn">
+        <button class="btn">Send Message</button>
+      </div>
+    </div>
+
+    <!-- Instagram Images -->
+    <div class="image">
+
+      <div class="img-box1">
+        <img src="https://unifato.com/hosue/assets/img/all-images/others/others-img7.png">
+        <div class="overlay"><i class="fa-brands fa-instagram"></i></div>
+      </div>
+
+      <div class="img-box2">
+        <img src="https://unifato.com/hosue/assets/img/all-images/others/others-img8.png">
+        <div class="overlay"><i class="fa-brands fa-instagram"></i></div>
+      </div>
+
+      <div class="img-box3">
+        <img src="https://unifato.com/hosue/assets/img/all-images/others/others-img9.png">
+        <div class="overlay"><i class="fa-brands fa-instagram"></i></div>
+      </div>
+
+      <div class="img-box4">
+        <img src="https://unifato.com/hosue/assets/img/all-images/others/others-img10.png">
+        <div class="overlay"><i class="fa-brands fa-instagram"></i></div>
+      </div>
+
+    </div>
+
+    <!-- Main Footer -->
+    <div class="main-footer">
+
+      <div class="foot-logo">
+        <img src="https://unifato.com/hosue/assets/img/logo/logo3.png">
+      </div>
+
+      <div class="foot-links">
+        <div class="first-li">
+          <a href="#">Home</a>
+          <a href="#">Properties</a>
+          <a href="#">Gallery</a>
+        </div>
+
+        <div class="second-li">
+          <a href="#">Blog</a>
+          <a href="#">Pages</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+
+      <div class="foot-add">
+        <a href="#">📍 65, Brand Tower <br> New York, USA</a> <br> <br>
+        <a href="#">📞 123-456-7890</a>
+      </div>
+
+      <div class="foot-soci-logo">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+
+
+    <!-- <hr> -->
+      <p class="copy">© 2024 Hosue-Single Property HTML Template</p>
+      
+    </div>
+
+  </div>
+</footer>
+<div class="scroll-btn">
+  <svg viewBox="0 0 100 100">
+    <circle cx="50" cy="50" r="45"></circle>
+  </svg>
+  <span><i class="fa-solid fa-arrow-up"></i></span>
+</div>
+<script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="index1.js"></script>
+</body>
+</html> 
